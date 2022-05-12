@@ -1,0 +1,11 @@
+input[type="submit"]:hover {
+    background-color: rgb(84, 196, 233);
+    transform: scale(1.1);
+}
+
+#myButton {
+    transform: scale(1.5);
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+}

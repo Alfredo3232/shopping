@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+
+<body style="background-color: lightgrey;">
+    <div class="container" style="text-align: center;color: black;">
+        <h1>Uber Feasts Checkout</h1>
+    </div>
+    <div class="container">
+        <br>
+        <p style="text-align: center;">Please enter your address</p>
+        <br>
+        <form style="text-align: center;">
+            <label for="line 1">Line 1:</label><br>
+            <input type="text" name="line 1" id="line 1" placeholder="Enter your line 1" required>
+            <input type="submit" value="Submit"><br>
+            <br>
+            <label for="line 2">Line 2:</label><br>
+            <input type="line 2" name="line 2" id="line 2" placeholder="Enter your line 2">
+            <input type="submit" value="Submit"><br>
+            <br>
+            <label for="city">City:</label><br>
+            <input type="password" name="city" id="city" placeholder="Enter your city" required>
+            <input type="submit" value="Submit"><br>
+            <br>
+            <label for="state">State:</label><br>
+            <input type="password" name="state" id="state" placeholder="Enter your state" required>
+            <input type="submit" value="Submit"><br>
+            <br>
+            <label for="zipCode">Zip Code:</label><br>
+            <input type="password" name="zipCode" id="zipCode" placeholder="Enter your zip code" required>
+            <input type="submit" value="Submit"><br>
+            <br>
+            <label for="phoneNumber">Phone Number:</label><br>
+            <input type="password" name="phoneNumber" id="phoneNumber" placeholder="Enter your phone number" required>
+            <input type="submit" value="Submit"><br>
+        </form>
+    </div>
+    <div>
+        <button id="myButton" class="float-left submit-button">Next Page</button>
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "/F2";
+            };
+        </script>
+    </div>
+</body>
+
+
+</html>

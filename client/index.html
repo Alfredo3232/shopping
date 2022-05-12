@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+
+<body style="background-color: lightgrey;">
+    <div class="container" style="text-align: center;color: black;">
+        <h1>Uber Feasts Checkout</h1>
+    </div>
+    <div class="container">
+        <br>
+        <p style="text-align: center;">Please enter your account information</p>
+        <br>
+        <form style="text-align: center;">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <input type="submit" value="Submit"><br>
+            <br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <input type="submit" value="Submit"><br>
+            <br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="pass" id="password" placeholder="Enter your password" required>
+            <input type="submit" value="Submit"><br>
+        </form>
+    </div>
+    <div>
+        <button id="myButton" class="float-left submit-button">Next Page</button>
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "./F2/F2.html";
+            };
+        </script>
+    </div>
+</body>
+
+
+</html>
