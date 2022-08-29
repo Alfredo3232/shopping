@@ -12,8 +12,9 @@ const connection = mysql.createConnection({
   password: "password",
   database: 'data'
 });
+
 connection.connect()
-console.log( "=================================================>",connection)
+console.log("=================================================>", connection)
 
 // // simple query
 // connection.query(
@@ -29,17 +30,20 @@ app.use(bodyParser.json())
 
 app.use('/', express.static('./client'))
 
-app.get('/insert ', (req, res)=> {
-  db.query('INSERT',  [variable], (err, result) => {
-    
+app.get('/insert ', (req, res) => {
+  db.query('INSERT', [variable], (err, result) => {
+
   })
 })
 app.get('/F2', (req, res) => {
   res.sendFile('./client/F2/F2.html')
 })
+
 app.post('/datas', (req, res) => {
   res.send('Post Request Successful')
 })
+
+
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
